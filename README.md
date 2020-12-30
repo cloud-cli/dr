@@ -7,8 +7,16 @@ First make sure you have an SSL certificate. You should have a folder inside `/e
 ## Configuration
 
 - Clone this project
+```
+git clone https://github.com/cloud-cli/docker-registry.git ~/.docker-registry
+```
+
 - Create a file called `.env` in the root folder
-- Add the following settings:
+```
+touch ~/.docker-registry/.env
+```
+
+- Open the file and add the following settings:
 
 ```
 REGISTRY_HTTP_SECRET="<generate a very long and random key and add here>"
