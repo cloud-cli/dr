@@ -37,6 +37,12 @@ case $1 in
     docker run --rm -it appsoa/docker-alpine-htpasswd "$USERNAME" "$PASSWORD" > auth/htpasswd
   ;;
 
+  install)
+    ln -s $(pwd)/docker.bash /usr/local/bin/docker-registry
+    chmod +x docker.bash
+    ln -s docker-registry.service /etc/systemd/system/docker-registry.service
+  ;;
+
   *)
     echo Usage:
     echo "  sh docker.sh <start | stop | update-certs | update-password>"

@@ -7,15 +7,12 @@ First make sure you have an SSL certificate. You should have a folder inside `/e
 ## Configuration
 
 - Clone this project
+
 ```
-git clone https://github.com/cloud-cli/docker-registry.git ~/.docker-registry
+git clone https://github.com/cloud-cli/docker-registry.git
 ```
 
-- Create a file called `.env` in the root folder
-```
-touch ~/.docker-registry/.env
-```
-
+- Create a file called `.env` inside the project folder
 - Open the file and add the following settings:
 
 ```
@@ -52,7 +49,6 @@ Username and password defined here are then used by `docker login` command
 
 `bash docker.bash update-certs`
 
-Copies the SSL certificates from a folder in `/etc/letsencrypt/live/*` to use as the registry SSL certificates. 
+Copies the SSL certificates from a folder in `/etc/letsencrypt/live/*` to use as the registry SSL certificates.
 
 See [configuration](https://github.com/cloud-cli/docker-registry#configuration) for details.
-
