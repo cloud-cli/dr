@@ -2,8 +2,8 @@
 Description="Self-hosted Docker Registry"
 After=home.mount
 
-[Service]
-ExecStart=/usr/local/bin/docker-registry start
-
 [Install]
 WantedBy=multi-user.target
+
+[Service]
+ExecStart=/usr/local/bin/docker-registry start

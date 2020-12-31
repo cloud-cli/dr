@@ -52,3 +52,9 @@ Username and password defined here are then used by `docker login` command
 Copies the SSL certificates from a folder in `/etc/letsencrypt/live/*` to use as the registry SSL certificates.
 
 See [configuration](https://github.com/cloud-cli/docker-registry#configuration) for details.
+
+#### Autorun on boot
+
+`bash docker.bash install`
+
+> Note: this requires `systemd`

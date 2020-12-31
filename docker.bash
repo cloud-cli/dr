@@ -38,13 +38,15 @@ case $1 in
   ;;
 
   install)
+    rm /usr/local/bin/docker-registry
     ln -s $(pwd)/docker.bash /usr/local/bin/docker-registry
-    chmod +x docker.bash
-    ln -s docker-registry.service /etc/systemd/system/docker-registry.service
+    chmod +x /usr/local/bin/docker-registry
+    cp docker-registry.service /etc/systemd/system/docker-registry.service
+    echo 'WorkingDirectory='$PWD >> /etc/systemd/system/docker-registry.service
   ;;
 
   *)
     echo Usage:
-    echo "  sh docker.sh <start | stop | update-certs | update-password>"
+    echo "  sh docker.sh <start | stop | update-certs | update-password | install>"
   ;;
 esac
