@@ -55,6 +55,10 @@ See [configuration](https://github.com/cloud-cli/docker-registry#configuration) 
 
 #### Autorun on boot
 
-`bash docker.bash install`
+```
+bash docker.bash install
+systemctl enable docker-registry
+systemctl start docker-registry
+```
 
 > Note: this requires `systemd`

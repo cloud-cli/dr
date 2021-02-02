@@ -47,6 +47,6 @@ case $1 in
 
   *)
     echo Usage:
-    echo "  sh docker.sh <start | stop | update-certs | update-password | install>"
+    echo "  bash docker.bask <start | stop | update-certs | update-password | install>"
   ;;
 esac
