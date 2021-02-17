@@ -4,7 +4,7 @@ export $(egrep -v '^#' .env | xargs)
 
 case $1 in
   start)
-    docker run --rm -d \
+    docker run --rm \
     -p 127.0.0.1:$REGISTRY_PORT:443 \
     --name registry \
     -v $(pwd)/storage:/var/lib/registry \

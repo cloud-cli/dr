@@ -7,3 +7,5 @@ WantedBy=multi-user.target
 
 [Service]
 ExecStart=/usr/local/bin/docker-registry start
+Restart=always
+RestartSec=5
