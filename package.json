@@ -4,6 +4,6 @@
   "scripts": {
     "start": "bash docker.bash start",
     "stop": "bash docker.bash stop",
-    "install": "bash docker.bash install"
+    "service-install": "bash docker.bash install"
   }
 }
