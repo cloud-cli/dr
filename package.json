@@ -1,0 +1,9 @@
+{
+  "name": "@cloud-cli/dr",
+  "version": "0.0.0",
+  "scripts": {
+    "start": "bash docker.bash start",
+    "stop": "bash docker.bash stop",
+    "install": "bash docker.bash install"
+  }
+}
